@@ -1,0 +1,228 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol, ul {
+  list-style: none;
+}
+blockquote, q {
+  quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/*            End of CSS Reset            */
+
+/*                 Setup                  */
+
+/*               Borderbox                */
+*, *:before, *:after {
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+}
+/* clearfix */
+.clearfix:before, .clearfix:after {
+  content: "";
+  display: table;
+}
+.clearfix:after {
+  clear: both;
+}
+.clearfix {
+  clear: both;
+  *zoom: 1;
+}
+/*               End of Setup             */
+
+*{
+  box-sizing: border-box;
+  font-size: 16px;
+  
+}
+
+body{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  font-family: "Myriad Set Pro","Helvetica Neue","Helvetica","Arial",sans-serif;
+}
+
+.navigation-bar{
+  background-color: black;
+  color: white;
+  display: flex;
+  justify-content:center;
+  align-items: center;
+}
+
+.navigation-bar a{
+  margin: 0 17px;
+  padding: 0 17px;
+}
+
+.navigation-bar a:hover{
+  opacity: .7;
+  cursor: pointer;
+}
+
+main{
+  height:600px;
+  background-image: url(./images/hero_iphone_13pro.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  margin: 20px 0;
+  padding: 10px;
+
+}
+
+main a{
+  text-decoration: none;
+  padding: 0 5px;
+  font-size: 24px;
+  color:#08c;
+}
+
+main a:hover{
+  text-decoration: underline;
+  color: black;
+}
+
+h1{
+  font-size: 3em;
+  font-weight: 600;
+  margin: 0.67em;
+}
+
+h3{
+  margin: 0 20px;
+  font-size: 36px;
+  font-weight: 500;
+}
+
+main section{
+  margin-top: 20px;
+}
+
+.advertise-product{
+  display: flex;
+}
+
+.advertise-product img{
+  width: 25%;
+}
+
+/*CSS on the FOURTH FLEX CONTAINER*/
+.side-note{
+  display: flex;
+  justify-content: center;
+  color:#08c;
+  margin: 25px;
+}
+
+.side-note a{
+  text-decoration: none;
+  font-size: 18px;
+}
+
+.side-note a:hover,
+.side-note a:visited{
+  color:#08c;
+  text-decoration: underline;
+}
+
+/*CSS on the FIFTH FLEX CONTAINER*/
+.information-notes{
+  display: flex;
+  flex-direction: column;
+  font-size: 12px;
+}
+
+.first-information,
+.second-information,
+.third-information{
+  font-size: 12px;
+  display: flex;
+}
+
+.first-information div a:first-child{
+  text-decoration: none;
+  font-weight: bold;
+  color: black;
+}
+
+.first-information a{
+  text-decoration: none;
+  color: #666;
+  margin: 5px;
+}
+
+.information-notes a:hover{
+  text-decoration: underline;
+  color: #666;
+}
+
+.shop-and-learn,
+.apple-store,
+.for-education-and-business,
+.for-education,
+.for-business,
+.account-and-apple-value,
+.account,
+.apple-value,
+.about-apple{
+  display: flex;
+  flex-direction: column;
+
+}
+
+.for-education,
+.account{
+  margin-bottom: 20px;
+}
+
+footer{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
