@@ -176,6 +176,7 @@ main section{
   display: flex;
   flex-direction: column;
   font-size: 12px;
+  justify-content: space-around;
 }
 
 .first-information,
@@ -183,6 +184,7 @@ main section{
 .third-information{
   font-size: 12px;
   display: flex;
+  justify-content: space-around;
 }
 
 .first-information div a:first-child{
@@ -194,7 +196,7 @@ main section{
 .first-information a{
   text-decoration: none;
   color: #666;
-  margin: 5px;
+  margin: 0 20px 10px;
 }
 
 .information-notes a:hover{
@@ -221,8 +223,3 @@ main section{
   margin-bottom: 20px;
 }
 
-footer{
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
