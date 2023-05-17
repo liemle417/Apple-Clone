@@ -251,4 +251,5 @@ footer a:hover{
 .third-information span{
   position: absolute;
   color:#666;
+  border: 1px solid black;
 }
