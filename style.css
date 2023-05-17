@@ -172,19 +172,17 @@ main section{
 }
 
 /*CSS on the FIFTH FLEX CONTAINER*/
-.information-notes{
+footer{
   display: flex;
   flex-direction: column;
   font-size: 12px;
-  justify-content: space-around;
 }
 
 .first-information,
-.second-information,
-.third-information{
+.second-information{
   font-size: 12px;
   display: flex;
-  justify-content: space-around;
+  align-self: center;
 }
 
 .first-information div a:first-child{
@@ -193,10 +191,11 @@ main section{
   color: black;
 }
 
-.first-information a{
+.first-information a,
+.second-information a{
   text-decoration: none;
   color: #666;
-  margin: 0 20px 10px;
+  margin: 0 20px 10px 0;
 }
 
 .information-notes a:hover{
@@ -215,7 +214,6 @@ main section{
 .about-apple{
   display: flex;
   flex-direction: column;
-
 }
 
 .for-education,
@@ -223,3 +221,7 @@ main section{
   margin-bottom: 20px;
 }
 
+.second-information{
+  display: flex;
+  flex-direction: column;
+}
