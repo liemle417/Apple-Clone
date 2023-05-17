@@ -176,14 +176,17 @@ footer{
   display: flex;
   flex-direction: column;
   font-size: 12px;
-  align-content: space-between;
+  align-self: center;
+
 }
 
-.first-information,
-.second-information{
+.first-information{
   font-size: 12px;
   display: flex;
-  justify-content: space-around;
+}
+
+.first-information{
+  margin-bottom: 20px;
 }
 
 .first-information div a:first-child{
@@ -196,11 +199,20 @@ footer{
 .second-information a,
 .third-information a{
   text-decoration: none;
-  color: #666;
-  margin: 0 20px 10px 0;
+  color: #666;  
 }
 
-.footer a:hover{
+.first-information a{
+  margin: 0 50px 10px 0;
+}
+
+.second-information a{
+  color:#08c;
+  text-decoration: underline;
+}
+
+
+footer a:hover{
   text-decoration: underline;
   color: #666;
 }
@@ -213,8 +225,7 @@ footer{
 .account-and-apple-value,
 .account,
 .apple-value,
-.about-apple,
-.more-info{
+.about-apple{
   display: flex;
   flex-direction: column;
 }
@@ -227,4 +238,23 @@ footer{
 .second-information{
   display: flex;
   flex-direction: column;
+}
+
+.third-information{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  height:10px;
+}
+
+.third-information span{
+  position: absolute;
+  color:#666;
+}
+
+.third-information-2{
+  margin: 0;
+  justify-content: start;
 }
