@@ -211,7 +211,6 @@ footer{
   text-decoration: underline;
 }
 
-
 footer a:hover{
   text-decoration: underline;
   color: #666;
@@ -252,9 +251,4 @@ footer a:hover{
 .third-information span{
   position: absolute;
   color:#666;
-}
-
-.third-information-2{
-  margin: 0;
-  justify-content: start;
 }
