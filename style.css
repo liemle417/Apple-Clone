@@ -3,6 +3,38 @@
    License: none (public domain)
 */
 
+/*                  Font                  */
+@font-face {
+  font-family: "Myriad Set Pro";
+  src: url("fonts/myriad-set-pro_bold.ttf") format("truetype");
+  font-weight: 700;
+}
+@font-face {
+  font-family: "Myriad Set Pro";
+  src: url("fonts/myriad-set-pro_semibold.ttf") format("truetype");
+  font-weight: 600;
+}
+@font-face {
+  font-family: "Myriad Set Pro";
+  src: url("fonts/myriad-set-pro_medium.ttf") format("truetype");
+  font-weight: 500;
+}
+@font-face {
+  font-family: "Myriad Set Pro";
+  src: url("fonts/myriad-set-pro_text.ttf") format("truetype");
+  font-weight: 400;
+}
+@font-face {
+  font-family: "Myriad Set Pro";
+  src: url("fonts/myriad-set-pro_thin.ttf") format("truetype");
+  font-weight: 300;
+}
+@font-face {
+  font-family: "Myriad Set Pro";
+  src: url("fonts/myriad-set-pro_ultralight.ttf") format("truetype");
+  font-weight: 100;
+}
+
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -73,12 +105,11 @@ table {
 
 *{
   box-sizing: border-box;
-  font-size: 16px;
-  
+  font-size: 16px;  
 }
 
 body{
-  width: 100%;
+  width: 100vw;
   display: flex;
   flex-direction: column;
   font-family: "Myriad Set Pro","Helvetica Neue","Helvetica","Arial",sans-serif;
@@ -172,84 +203,89 @@ main section{
 }
 
 /*CSS on the FIFTH FLEX CONTAINER*/
+
 footer{
   display: flex;
   flex-direction: column;
-  font-size: 12px;
   align-self: center;
-
-}
-
-.first-information{
   font-size: 12px;
+}
+.bold{
+  font-weight: 600;
+}
+
+.link-information,
+.more-information,
+.third-information{
   display: flex;
-}
-
-.first-information{
-  margin-bottom: 20px;
-}
-
-.first-information div a:first-child{
-  text-decoration: none;
-  font-weight: bold;
-  color: black;
-}
-
-.first-information a,
-.second-information a,
-.third-information a{
-  text-decoration: none;
-  color: #666;  
-}
-
-.first-information a{
-  margin: 0 50px 10px 0;
-}
-
-.second-information a{
-  color:#08c;
-  text-decoration: underline;
-}
-
-footer a:hover{
-  text-decoration: underline;
-  color: #666;
+  justify-content: space-between;
 }
 
 .shop-and-learn,
 .apple-store,
 .for-education-and-business,
-.for-education,
-.for-business,
 .account-and-apple-value,
-.account,
-.apple-value,
 .about-apple{
   display: flex;
   flex-direction: column;
 }
 
-.for-education,
-.account{
-  margin-bottom: 20px;
+.special{
+  color:#08c;
+  text-decoration: none;
 }
 
-.second-information{
-  display: flex;
-  flex-direction: column;
+.special:hover{
+  text-decoration: underline;
+  color:#666;
 }
 
+.bold,
+.link-style,
+.more-information,
 .third-information{
+  padding: 0 4rem 5px;
+  text-decoration: none;
+  color: #666;
+}
+
+.more-information p,
+.third-information{
+  color:#b8b6b6;
+}
+
+
+hr{
+  width: calc(100% - 8rem);
+  border-top: 1px solid #666;
+}
+.link-style a:hover,
+.third-information a:hover{
+  color: #666;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.third-information a{
+  text-decoration: none;
+  color: #666;
+}
+
+.third-information div:first-child{
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
   align-items: center;
-  position: relative;
-  height:10px;
 }
 
-.third-information span{
-  position: absolute;
-  color:#666;
-  border: 1px solid black;
+.third-information div:first-child a{
+  padding: 0 10px;
+}
+
+.third-information div:nth-child(2){
+  display: flex;
+  align-items: center;
+}
+
+.third-information img{
+  padding: 0 5px;
 }
