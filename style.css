@@ -109,7 +109,8 @@ table {
 }
 
 body{
-  width: 100vw;
+  width: 1100px;
+  margin: 0 auto;
   display: flex;
   flex-direction: column;
   font-family: "Myriad Set Pro","Helvetica Neue","Helvetica","Arial",sans-serif;
@@ -207,7 +208,8 @@ main section{
 /*CSS on the FIFTH FLEX CONTAINER*/
 
 footer{
-  width: 100%;
+  width: 1100px;
+  margin: 0 auto;
   display: flex;
   flex-direction: column;
   align-self: center;
