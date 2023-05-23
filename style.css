@@ -138,13 +138,11 @@ main{
   background-image: url(./images/hero_iphone_13pro.jpg);
   background-repeat: no-repeat;
   background-position: center;
-
   text-align: center;
   display: flex;
   flex-direction: column;
   margin: 20px 0;
   padding: 10px;
-
 }
 
 main a{
